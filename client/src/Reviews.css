@@ -1,0 +1,52 @@
+.reviews-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .review-card {
+    width: 100%; /* Makes the review card take the full width of its container */
+    margin: 20px 0; /* Keeps the horizontal margin to 0 and applies vertical margin */
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #eaeaea;
+    border-radius: 4px;
+  }
+  
+  .review-content, .review-author {
+    color: #333;
+  }
+  
+  .review-author {
+    font-style: italic;
+    margin-top: 10px;
+  }
+  
+  .reviews-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .delete-button {
+    display: block;
+    background-color: #564757;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: auto; /* Adjust button width as needed or keep it auto */
+  }
+  
+  .delete-button:hover {
+    background-color: #362c39;
+  }
+  
+  .reviews-title {
+    color: #564757;
+  }

@@ -1,0 +1,99 @@
+/* Set the background color for the entire page (assuming this is the only component on the page) */
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: var(--champagne);
+  }
+  
+  /* Center the form on the page */
+  .contact-us-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 4rem 1rem;
+  }
+  
+  .contact-us-title {
+    color: #59475f;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 2rem;
+  }
+  
+  form {
+    width: 100%;
+    max-width: 500px;
+    padding: 2rem;
+    background-color: #d5cbb7;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #423048;
+    font-size: 1rem;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+    width: calc(100% - 1.6rem); /* Subtract padding */
+    padding: 0.8rem;
+    margin-bottom: 1.2rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  form textarea {
+    height: 150px;
+    resize: vertical;
+  }
+  
+  form input[type="submit"] {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #59475f;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    transition: background-color 0.3s ease;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #423048;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    form {
+      padding: 1rem;
+    }
+  }
+  
+
+  .contact-button {
+    border-radius: 20px; /* Adjust as needed for desired roundness */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* This will add a shadow */
+    font-size: 16px; /* Adjust as needed */
+    color: #ffffff; /* Or any other color that fits your design */
+    background-color: #007bff; /* Or any other color that fits your design */
+    /* Add other styling as needed to make it consistent with your design */
+  }
+  
+  .contact-text {
+    font-size: 18px; /* Adjust as needed */
+    color: #333333; /* Or any other color that fits your design */
+    /* Add other styling as needed to make it consistent with your design */
+  }
+
+  

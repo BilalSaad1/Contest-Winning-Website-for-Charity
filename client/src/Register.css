@@ -1,0 +1,92 @@
+/* Register.css */
+.register-container {
+    background-color: #f4ecdc; /* Background color */
+    width: 100%; /* Full width to center the form */
+    max-width: 575px; /* Maximum width of the form */
+    margin: 50px auto; /* Center the form with auto margins */
+    padding: 2rem; /* Padding inside the form */
+    border-radius: 10px; /* Rounded corners for the form */
+    font-family: 'Arial', sans-serif; /* Font family */
+}
+
+.register-container h2 {
+    color: #604a66; /* Title color */
+    text-align: center; /* Center the title */
+    margin-bottom: 20px; /* Space below the title */
+    font-size: 2.5rem; /* Increased font size */
+}
+
+.register-container h3 {
+    font-size: 1rem; /* Smaller font size for labels */
+    color: #503d56; /* Title color */
+    margin-top: 10px; /* Space above the labels */
+    margin-bottom: 8px; /* Reduced space below the labels */
+    font-family: 'Arial', sans-serif;
+
+}
+
+.register-container input[type="text"],
+.register-container input[type="email"],
+.register-container input[type="password"] {
+    width: calc(100% - 20px); /* Full width minus padding */
+    padding: 10px; /* Padding inside the inputs */
+    margin-bottom: 15px; /* Reduced space between the inputs */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 5px; /* Rounded corners for inputs */
+    font-size: 1rem; /* Font size */
+}
+
+.register-container input[type="checkbox"] {
+    margin-right: 10px; /* Space next to the checkbox */
+}
+
+.register-container label {
+    display: flex; /* Align label text with checkbox */
+    align-items: center; /* Align items vertically */
+    font-size: 1rem; /* Smaller font size for checkbox label */
+    color: #6a5870; /* Label color, change as needed */
+}
+
+.register-container button[type="submit"] {
+    width: 100%; /* Full width */
+    padding: 15px; /* Padding inside the button */
+    background-color: #6a5870; /* Button background color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s ease; /* Transition for hover effect */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.register-container button[type="submit"]:hover {
+    background-color: #5d4a62; /* Darker shade on hover */
+}
+
+/* Additional styles to match the Contact Us form */
+.register-container input:focus,
+.register-container textarea:focus,
+.register-container select:focus {
+    outline: none;
+    border-color: #6a5870;
+}
+
+/* Styles for status message */
+.statusMessage {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.statusMessage.success {
+    color: green;
+}
+
+.statusMessage.failed {
+    color: red;
+}
+
+.statusMessage.uploading {
+    color: blue;
+}

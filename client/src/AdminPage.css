@@ -1,0 +1,58 @@
+/* AdminDashboard.css */
+
+/* Resets the margin and padding to remove unwanted space */
+body, h1, h2, h3, p, ul, ol, nav, figure, figcaption, button {
+  margin: 0;
+  padding: 0;
+}
+
+/* Main container for the admin dashboard to ensure everything is centralized */
+.admin-dashboard {
+  font-family: 'Arial', sans-serif; /* Ensures font consistency */
+}
+
+/* Styling for the main navbar, assuming it's the outer one */
+.admin-dashboard nav {
+  background-color: var(--purple); /* Your navbar color */
+  overflow: hidden;
+}
+
+.admin-dashboard nav button {
+    background-color: var(--purple-gray); /* Use the purple-gray color */
+    color: var(--champagne); /* Use the champagne color for text */
+    padding: 10px 20px; /* Match padding to general button styles */
+    font-size: 1.1rem; /* Match font size to general button styles */
+    border: none; /* No border for a seamless look */
+    border-radius: 5px; /* Rounded corners to match general button styles */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect to match general button styles */
+    cursor: pointer; /* Cursor to pointer */
+    text-align: center; /* Center text */
+    text-decoration: none; /* No text decoration */
+    font-family: 'Montserrat', sans-serif; /* Font styling to match general button styles */
+    transition: background-color 0.3s ease; /* Transition for a hover effect */
+    display: inline-block; /* Display as inline-block */
+  }
+  
+  .admin-dashboard nav button:hover {
+    background-color: #deafa1; /* Darker shade for hover effect to match general button styles */
+    color: white; /* Text color change on hover */
+  }
+  
+  .admin-navbar .active {
+    background-color:  #da9986; /* Active button background color using olive-drab */
+    color: white;
+  }
+
+/* Eliminates the gap between navbars */
+.admin-dashboard nav + nav {
+  border-top: none; /* If there's a border, remove it to connect the two navbars */
+}
+
+/* For a seamless look, the second navbar adopts the main navbar styling */
+.admin-dashboard nav + nav button {
+  background-color: var(--purple);
+}
+
+.admin-dashboard nav + nav button.active {
+  background-color:var(--purple-gray);
+}

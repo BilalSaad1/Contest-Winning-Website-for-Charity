@@ -1,0 +1,103 @@
+/* Calendar.css */
+
+.my-calendar {
+    max-width: 1000px; /* Adjust based on your preference */
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Montserrat';
+  }
+  
+  .my-calendar .fc-toolbar-title {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .my-calendar .fc-button {
+    background-color: #6a5870; /* Updated color */
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .my-calendar .fc-button:hover {
+    background-color: #deafa1; /* Darker shade for hover */
+  }
+  
+  .my-calendar .fc-button-primary {
+    background-color: #6a5870; /* Updated color */
+    border-color: #6a5870;
+  }
+  
+  .my-calendar .fc-button-primary:not(:disabled):active, .my-calendar .fc-button-primary:not(:disabled).fc-button-active {
+    background-color: #da9986; /* Darker shade for active state */
+    border-color: #da9986;
+  }
+  
+  .my-calendar .fc-button-primary:focus {
+    box-shadow: 0 0 0 0.2rem #654470;
+  }
+  
+  /* Adjust the colors for the header to match the buttons */
+  .my-calendar .fc-header-toolbar {
+    margin-bottom: 20px;
+  }
+  
+  /* Adjust day background colors */
+  .my-calendar .fc-daygrid-day {
+    transition: background-color 0.3s ease;
+  }
+  
+  .my-calendar .fc-daygrid-day:hover {
+    background-color: #da9986;
+  }
+  
+  /* Style the today button */
+  .my-calendar .fc-today-button {
+    background-color: #6a5870;
+    font-weight: bold;
+  }
+  
+  .my-calendar .fc-today-button:active {
+    background-color: #da9986;
+    font-weight: bold;
+  }
+
+
+  /* Style current day */
+  .my-calendar .fc-day-today {
+    background: #ffd5b3 !important;
+  }
+  
+  .my-calendar .fc-timegrid-slot:hover, .my-calendar .fc-timegrid-slot-label:hover {
+    background-color: #da9986; /* Lighter shade for time slot hover, adjust as needed */
+}
+
+/* Optionally, if you want to style the day headers in the Week view on hover */
+.my-calendar .fc-col-header-cell:hover {
+    background-color: #f0f0f0; /* Light shade for header hover, adjust as needed */
+}
+
+  /* Adjust event colors */
+  .my-calendar .fc-event {
+    background-color: #6a5870; /* Making event colors consistent */
+    border: 1px solid #6a5870;
+    color: #ffffff;
+    font-size: 14px;
+    border-radius: 4px;
+  }
+  
+  .my-calendar .fc-event:hover {
+    background-color: #da9986 /* Darker shade for hover */
+  }
+  
+
+  .event-list{
+    margin: 50px;
+  }

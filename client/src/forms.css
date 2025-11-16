@@ -1,0 +1,54 @@
+.formApp_container {
+    max-width: 1200px;
+    margin: 40px auto;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.formApp_formGroup {
+    margin-bottom: 20px;
+}
+
+.formApp_label {
+    display: block;
+    color: #333;
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.formApp_input[type="file"] {
+    padding: 10px;
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+/* Applying the same styles for the download button as the upload and view buttons */
+.formApp_uploadButton, .formApp_viewButton, .formApp_downloadButton {
+    background-color: #6a5870;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 10px;
+}
+
+.formApp_uploadButton:hover, .formApp_viewButton:hover, .formApp_downloadButton:hover {
+    background-color: #deafa1;
+}
+
+.formApp_htmlContent {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+}

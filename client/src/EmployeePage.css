@@ -1,0 +1,102 @@
+body, h1, h2, h3, p, ul, ol, nav, figure, figcaption, button {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .employee-dashboard {
+    font-family: 'Arial', sans-serif; 
+  }
+  
+  .employee-dashboard nav {
+    background-color: var(--purple); 
+    overflow: hidden;
+  }
+  
+  .employee-dashboard nav button {
+    background-color: var(--purple-gray); 
+    color: var(--champagne); 
+    padding: 10px 20px; 
+    font-size: 1.1rem; 
+    border: none; 
+    border-radius: 5px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+    cursor: pointer; 
+    text-align: center; 
+    text-decoration: none; 
+    font-family: 'Montserrat', sans-serif; 
+    transition: background-color 0.3s ease; 
+    display: inline-block; 
+  }
+  
+  .employee-dashboard nav button:hover {
+    background-color: #deafa1; 
+    color: white; 
+  }
+  
+  .employee-navbar .active {
+    background-color: #da9986; 
+    color: white;
+  }
+  
+
+  .clock-in-out-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Styling for the clock in/out buttons to make them more prominent */
+  .employee-button {
+    background-color:var(--purple); /* Or any color that fits the design */
+    color: white;
+    padding: 12px 24px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+  }
+  
+  .employee-button:hover {
+    background-color: #deafa1; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  }
+  
+  .employee-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .shift-length {
+    font-size: 1.1rem;
+    color: var(--black);
+    margin: 10px 0;
+  }
+  
+  .hours-records {
+    width: 100%;
+    max-width: 600px; 
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .record-entry {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .record-entry:last-child {
+    border-bottom: none;
+  }
+  
+  .record-entry p {
+    margin: 5px 0;
+    color: var(--black);
+    font-size: 1rem;
+  }

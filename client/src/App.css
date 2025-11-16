@@ -1,0 +1,113 @@
+:root {
+  --black: #000000;
+  --olive-drab: #647249;
+  --purple-gray: #6a5870;
+  --pale-pink: #deafa1;
+  --terra-cotta: #db7859;
+  --champagne: #f4ecdc;
+}
+
+.App {
+  
+  font-family: 'Arial', sans-serif;
+  color: var(--black);
+  background-color: var(--champagne);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.home-footer {
+  background-color: var(--purple); /* Purple background for footer */
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  padding: 1rem; /* Add padding for spacing */
+  text-align: center; /* Center text */
+}
+
+.home-footer p {
+  color: var(--champagne); /* Champagne color text */
+  margin-right: 200px; /* Add some space between the text and the button */
+  font-size: 1.2rem; /* Adjust the size as needed */
+  font-family: 'Montserrat', sans-serif; /* Font styling */
+}
+
+.contact-button {
+  background-color: var(--button-donate); /* Use the donate button color */
+  color: white; /* Text color */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  padding: 10px 20px; /* Padding inside the button */
+  font-size: 1.1rem; /* Font size */
+  border: none; /* No border */
+  cursor: pointer; /* Cursor to pointer */
+  transition: background-color 0.3s ease; /* Transition for hover effect */
+  font-family: 'Montserrat', sans-serif; /* Font styling */
+}
+
+.contact-button:hover {
+  background-color: #b5887a; /* Darker shade for hover */
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.contact-icon {
+  margin-right: 8px;
+  height: 25px; /* Example size */
+  vertical-align: middle; /* Aligns icon with text */
+}
+
+.donate-icon {
+  margin-right: 8px;
+  height: 30px; /* Example size */
+  vertical-align: middle; /* Aligns icon with text */
+}
+
+.login-icon2 {
+  margin-right: 8px;
+  height: 30px; /* Example size */
+  vertical-align: middle; /* Aligns icon with text */
+}
+
+.sign-icon {
+  margin-right: 8px;
+  height: 25px; /* Example size */
+  vertical-align: middle; /* Aligns icon with text */
+}
+
+
+.header-title {
+  margin-left: 0px; /* Adjust as necessary for spacing between logo and text */
+  /* ... other styles ... */
+  font-size: 1.7rem;
+  margin-top: 7px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.text-to-speech-toggle {
+  display: flex;
+  align-items: center;
+  background-color: #6a5870; /* Or any other background color you prefer */
+  color: #f4ecdc; /* Or any other text color you prefer */
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px; /* Optional: for rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.text-to-speech-toggle:hover {
+  background-color: #b17c6c; /* Or any other hover color you prefer */
+}
+
+.text-to-speech-toggle img {
+  width: 30px; /* Smaller icon size */
+  height: 37.5px; /* Smaller icon size */
+  margin-right: 8px; /* Space between icon and text */
+}

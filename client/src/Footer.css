@@ -1,0 +1,77 @@
+.footer {
+    background-color: #6a5870; /* Replace with your brand's purple color code */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: start;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+
+  }
+  
+  .footer-section {
+    flex: 1;
+    padding: 0 1rem;
+    text-align: left;
+  }
+  
+  .footer-section h2, .footer-section h3 {
+    margin: 0.5rem 0;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+font-size: 1.5rem;
+  }
+  
+  .footer-section .facebook-section {
+    order: 2;
+  }
+  
+  .footer-section a {
+    color: #ddd;
+    display: block;
+    margin: 0.5rem 0;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+  }
+  
+  .footer-section a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-button {
+    background-color: #deafa1; /* Replace with your brand's pink color code */
+    color: #fff;
+    width: 150px;
+    padding: 0.5rem 1rem;
+    border-radius: 1.2rem;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    transition: background-color 0.3s;
+    font-family: 'Montserrat', sans-serif;
+    margin: 20px;
+
+  }
+  
+  .footer-button:hover {
+    background-color: #b08173; /* Darker shade for the hover state */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+    }
+  
+    .footer-section {
+      margin-bottom: 1rem;
+    }
+  
+    .footer-section:last-child {
+      margin-bottom: 0;
+    }
+  }
+  

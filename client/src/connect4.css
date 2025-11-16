@@ -1,0 +1,70 @@
+/* connect4.css */
+
+  
+  .game-board {
+    display: grid;
+    grid-template-columns: repeat(7, 50px);
+    grid-gap: 5px;
+    background-color: #004d99;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  
+  .game-cell {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; /* Makes the cells circular */
+  }
+  
+  .player-X {
+    background-color: red; /* Color for player X */
+  }
+  
+  .player-O {
+    background-color: yellow; /* Color for player O */
+  }
+    #reset {
+      background-color: #deafa1;
+      color: #fff;
+      width: 300px;
+      padding: 0.5rem 1rem;
+      border-radius: 2rem;
+      border: none;
+      text-decoration: none;
+      display: inline-flex; /* Use inline-flex to align the image and text horizontally */
+      align-items: center; /* Center the image and text vertically */
+      justify-content: center; /* Center the image and text horizontally */
+      transition: background-color 0.3s;
+      position: absolute;
+      top: 15%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      @media (max-width: 768px) {
+        top: 10vh;
+      }
+
+      @media (max-width: 480px) {
+        top: 5vh;
+      }
+    }
+
+    #reset:hover {
+      background-color: #b08173;
+    }
+
+    #reset::before {
+      content: ""; /* Add an empty content before the text */
+      background-image: url("./power-restart-icon-3.png"); /* Replace "path/to/your/image.png" with the actual path to your image */
+      background-size: cover; /* Adjust the background size as needed */
+      width: 20px; /* Adjust the width of the image */
+      height: 20px; /* Adjust the height of the image */
+      margin-right: 5px; /* Add some spacing between the image and the text */
+    }
+  #reset:hover {
+    background-color: #b08173; /* Darker shade for the hover state */
+  }

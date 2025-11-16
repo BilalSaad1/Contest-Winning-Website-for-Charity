@@ -1,0 +1,77 @@
+.container {
+    display: flex;
+    justify-content: space-around; /* Centers the squares with space around them */
+    align-items: center; /* Aligns the squares vertically */
+    height: 100vh; /* Makes the container fill the screen height */
+}
+
+.square {
+    display: flex;
+    justify-content: center; /* Centers text horizontally */
+    align-items: center; /* Centers text vertically */
+    width: 40vw; /* 40% of the viewport width */
+    height: 50vh; /* 50% of the viewport height */
+    font-size: 2rem; /* Increases the text size */
+    cursor: pointer; /* Changes the cursor to a pointer to indicate it's clickable */
+    border-radius: 10px; /* Adds rounded edges to the squares */
+}
+
+#games {
+    /*background-color: lightblue; /* Differentiates the Games square */
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center; /* Centers the image vertically */
+    position: relative; /* Enables positioning of child elements */
+    width: 500px;
+    height: 500px;
+}
+
+#games h1 {
+    position: absolute; /* Positions the h1 element */
+    top: -11%; /* Places the h1 element at the top of the #games div */
+    left: 34%; /* Aligns the h1 element to the left of the #games div */
+    z-index: 1; /* Sets a higher stacking order for the h1 element */
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(72, 63, 81);
+    font-size: 3rem;
+
+}
+
+#games img {
+    width: 100%; /* Ensures the image fills the Games div */
+    height: 100%; /* Ensures the image fills the Games div */
+    object-fit: cover; /* Ensures the image fills the div without distortion */
+}
+#chat img {
+    width: 100%; /* Ensures the image fills the Chat div */
+    height: 100%; /* Ensures the image fills the Chat div */
+    object-fit: cover; /* Ensures the image fills the div without distortion */
+}
+    
+#chat {
+    /*background-color: lightgreen; /* Differentiates the Chat square */
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center; /* Centers the image vertically */
+    position: relative; /* Enables positioning of child elements */
+    width: 500px;
+    height: 500px;
+}
+#chat h1 {
+    position: absolute; /* Positions the h1 element */
+    top: -11%; /* Places the h1 element at the top of the #games div */
+    left: 39%; /* Aligns the h1 element to the left of the #games div */
+    z-index: 1; /* Sets a higher stacking order for the h1 element */
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(72, 63, 81);
+    font-size: 3rem;
+}
+    
+a {
+    /*color: inherit; /* Keeps the hyperlink text color unchanged */
+    color: #000;
+    
+}
+
+
+  

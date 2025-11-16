@@ -1,0 +1,706 @@
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+
+
+.slide-image {
+    width: 100%;
+    display: block;
+  }
+
+  .home-header {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 0.5rem;
+  }
+  
+  .header-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f4ecdc;
+    margin-left: 20px; /* Space between the logo and the title */
+    white-space: nowrap;
+    /* Add flex-grow to fill any available space after the title */
+    flex-grow: 1;
+  }
+  
+
+  .slider-container {
+    width: 100%;
+    height: 600px; /* Set the height of the slider */
+    overflow: hidden;
+  }
+  
+  .slide-image {
+    width: 100%;
+    height: 600px; /* Set the height of each image */
+    object-fit: cover; /* This will cover the area without stretching the image */
+  }
+
+
+
+  :root {
+    --black: #000000;
+    --pale-pink: #deafa1;
+    --champagne: #f4ecdc;
+    --button-donate: #deafa1; /* For the Donate button */
+    --purple: #6a5870;
+    --pink: #deafa1;
+    --green: #647249;
+    --dark-purple: #594765; /* Corrected dark purple color */
+  }
+
+.login-icon {
+    height: 70px; /* Set the height to match your design */
+    margin-right: 15px; /* Add some spacing between the icon and the button */
+  }
+.home {
+    font-family: 'Roboto', sans-serif;
+}
+
+.home-header {
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center;
+    background-color: #59475f;
+    padding: 0.5rem;
+    gap: 10px; /* Spacing between elements */
+}
+
+.company-logo {
+    margin-right: auto; /* Pushes everything else to the right */
+    height: 70px;
+
+}
+
+.home-button-header, .login-button-header, .signup-button-header, .donate-button-header, .toggle-tts-button {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    border: none; /* Removes border */
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+.home-button-header, .login-button-header, .signup-button-header, .toggle-tts-button {
+    background-color: #6a5870; /* Background color */
+    color: #f4ecdc; /* Text color */
+}
+
+.home-button-header:hover, .login-button-header:hover, .signup-button-header:hover, .toggle-tts-button:hover {
+    background-color: var(--button-donate); /* Hover color to match Donate button */
+    color: #f4ecdc; /* Change text color on hover for better visibility */
+}
+
+.donate-button-header {
+    background-color: var(--button-donate); /* Specific color */
+    color: #f4ecdc; /* Text color */
+}
+
+.login-banner {
+    display: flex;
+    justify-content: center;
+    background-color: #fffaf1;
+    padding: 1rem;
+}
+
+.home-button, .login-button-main {
+    padding: 30px 300px;
+    font-size: 2.1rem;
+    background-color: #deafa1;
+    color: #f4ecdc;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+    display: flex; /* Aligns children inline */
+    align-items: center; /* Center the items vertically */
+    justify-content: center; /* Center the items horizontally */
+}
+.home-button-main, .login-button-main {
+    border-radius: 20px; /* Adjust as needed for desired roundness */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* This will add a shadow */
+    /* Add other styling as needed to make it consistent with your design */
+  }
+
+  .home-button-header, .login-button-header, .signup-button-header, .donate-button-header, .toggle-tts-button {
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 0.5px 1px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    /* ... other styling rules */
+  }
+
+ .login-button-main:hover {
+    background-color: #b17c6c;
+}
+
+.about-us, .store-info {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f4ecdc;
+}
+
+.about-image {
+    max-width: 50%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.store-location, .store-hours {
+    font-family: 'Roboto', sans-serif;
+}
+
+.home-footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #59475f;
+    color: var(--black);
+}
+
+h1, h2, h3, p {
+    color: var(--dark-purple); /* Dark purple text color for all text elements */
+  }
+  
+  h1 {
+    font-size: 2.5rem; /* Larger font size for h1 */
+  }
+  
+  h2 {
+    font-size: 2rem; /* Larger font size for h2 */
+  }
+  
+  h3 {
+    font-size: 1.5rem; /* Larger font size for h3 */
+  }
+  
+  p {
+    font-size: 1.2rem; /* Larger font size for paragraphs */
+  }
+
+.content-section, .store-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem;
+}
+
+.content-section {
+    background-color: #f4ecdc;
+}
+
+.about-us {
+    flex: 1;
+    padding-right: 1rem;
+}
+
+.about-image {
+    flex: 1;
+    max-width: 50%;
+    height: auto;
+    margin-left: 1rem;
+}
+
+.store-section {
+    background-color: #deafa1;
+}
+
+.store-section > section {
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+.about-us-section {
+    display: flex;
+    justify-content: space-between; /* Even spacing between the columns */
+    align-items: stretch; /* Stretch the columns to the same height */
+    padding: 1rem 0;
+    gap: 50px; /* Add gap between columns */
+}
+
+.about-us-container {
+    text-align: center; /* Center the title */
+    margin-bottom: 2rem; /* Space below the title */
+}
+.about-us-title {
+    font-size: 2rem; /* Size of the title */
+    margin-bottom: 1rem; /* Space below the title */
+    color: var(--purple); /* Color for the title */
+    font-family: 'Arial', sans-serif; /* Font family for the title */
+}
+
+.about-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    width: calc(33.333% - 20px); /* Subtracting the gap from the total width */
+    background-color: #fffcf8; /* Background color for the column */
+    padding: 2rem;
+    border-radius: 10px; /* Rounded corners for the column */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for the column */
+    text-align: center; /* Center text */
+}
+
+.image-container {
+    width: 400px; /* Container takes the full width of the column */
+    height: auto; /* Set the height of the container */
+    display: flex;
+    justify-content: center; /* Center image horizontally */
+    align-items: center; /* Center image vertically */
+    margin-bottom: 1rem; /* Space below the image container */
+}
+
+.about-image {
+    max-width: 100%; /* Image takes max 100% of the container width */
+    max-height: 100%; /* Image takes max 100% of the container height */
+    width: 250px; /* Maintain aspect ratio */
+    height: 100\%; /* Set the image height to fill the container */
+    border-radius: 10px; /* Rounded corners for the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for the image */
+    object-fit: cover; /* Cover the area without stretching */
+}
+
+h3 {
+    font-family: 'Arial', sans-serif;
+    color: #4a3a50; /* Dark purple color for the headings */
+    font-size: 1.4rem; /* Larger font size for the headings */
+    margin: 0.5rem 0; /* Space above and below the heading */
+  }
+  
+  p {
+    font-family: 'Arial', sans-serif;
+    color: var(--purple); /* Purple color for the paragraph */
+    font-size: 1.1rem; /* Larger font size for the paragraph */
+    margin-bottom: 1rem; /* Space below the paragraph */
+  }
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .about-us-section {
+        flex-direction: column;
+        align-items: center; /* Center columns on smaller screens */
+    }
+    
+    .about-column {
+        width: 100%; /* Full width on smaller screens */
+        margin-bottom: 20px; /* Space between stacked columns */
+    }
+    
+    .image-container {
+        height: 250px; /* Keep image container height consistent on smaller screens */
+    }
+}
+
+  .store-location{
+    flex: 1; /* iframe will take up the space it needs based on its content */
+    flex: 1;
+    background-color: #fffcf8;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the container */
+    max-width: 700px; /* Fixed width of the container */
+    height: 500px; /* Fixed height of the container */
+    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.2); /* Drop shadow */
+    margin: 2rem auto; /* Add top/bottom margin and center horizontally */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Ensures the child elements adhere to the border radius */
+  }
+  
+  .store-details {
+    width: 100%; /* Make the details take the full width of the container */
+    padding: 1rem;
+    text-align: center; /* Center text inside the store details */
+  }
+
+
+
+
+
+  /* HomePage.css */
+
+  .ThreePillars .Pillar p{
+    font-size: 1.1  rem;
+    color: #4a3a50;
+    text-align: center;
+  }
+
+  .ContactInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 20px; /* This adds space between the iframe and contact details */
+  }
+
+.AboutUs {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .AboutUs-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .Banner {
+    position: relative;
+  }
+  
+  .Logo {
+    max-width: 200px; /* Adjust as necessary */
+    margin-bottom: 20px;
+  }
+  
+  .Tagline {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .MainContent {
+    text-align: center;
+  }
+  
+  .AboutUsIntroduction p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .Divider {
+    margin-top: 20px;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  }
+  
+  .OurVision blockquote {
+    font-style: italic;
+    color: #555;
+    border-left: 4px solid #7a7a7a;
+    padding-left: 20px;
+    margin: 20px 0;
+    font-size: 1.2em;
+  }
+  
+  .ThreePillars {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+  }
+  
+  .ThreePillars .Pillar {
+    max-width: 300px;
+  }
+  
+  .ThreePillars .Pillar img {
+    width: 330px;
+    max-height: 420px;
+    height: auto;
+    border-radius:15px; /* Optional: for rounded corners */
+
+  }
+  
+  .OurVision p{
+    font-size: .9rem;
+    color: rgb(124, 104, 132);
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+  }
+
+  .ThreePillars p, .AboutUsIntroduction p{
+    text-align: center;
+    font-size: 1rem;
+    color: rgb(104, 86, 112);
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+
+  }
+  .Tagline {
+    text-align: center;
+    font-size: 2.4rem;
+    color: rgb(66, 56, 72);
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .OperatingHours {
+    margin: 30px 0;
+  }
+  
+  .OperatingHours table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .OperatingHours th,
+  .OperatingHours td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .ContactInfo div {
+    margin-bottom: 15px;
+  }
+  
+  .ContactInfo h3 {
+    font-size: 1.1em;
+    color: #333;
+  }
+  
+  .ContactInfo p {
+    font-size: 0.9em;
+    color: #555;
+  }
+  
+  .Sponsors {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .Sponsors h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: rgb(76, 65, 82);
+    margin-top: 100px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .SponsorLogos {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  
+  .SponsorLogos img {
+    max-width: 150px; /* Adjust as needed */
+    margin: 10px;
+    opacity: 0.8;
+  }
+  
+  .SponsorLogos img:hover {
+    opacity: 1;
+  }
+
+  .SponsorLogos {
+    margin-left: 70 px;
+    display: flex;
+    justify-content: left; /* Center logos horizontally */
+    flex-wrap: wrap; /* Allow logos to wrap onto the next line on small screens */
+    gap: 10px; /* Space between logos */
+    margin-top: 20px; /* Space above the logos */
+  }
+  
+  .SponsorLogos img {
+    max-width: 100%; /* Ensure images are responsive */
+    height: 120px; /* Maintain aspect ratio */
+  }
+  
+  
+  .contact-details h3{
+    text-align: center;
+    font-size: 1.4rem;
+    color: rgb(74, 62, 79);
+    margin-top: 30px;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .contact-details p{
+    text-align: center;
+    font-size: 1.1rem;
+    color: rgb(104, 86, 112);
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .hours-section h3 {
+    display: block;
+    text-align: center;
+    margin-bottom: 30px; /* Adjust as needed */
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(54, 48, 57);
+    font-size: 2rem;
+
+
+  }
+  
+  .hours-columns {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(74, 62, 79);
+margin-bottom: 50px;
+  }
+  
+  
+  .column {
+    flex: 1;
+    margin: 0 10px; /* Adjust spacing between columns as needed */
+    font-family: 'Montserrat', sans-serif;
+
+  }
+  
+  .column h4 {
+    margin-bottom: 0.5em;
+    margin-left: 5rem;
+
+    font-family: 'Montserrat', sans-serif;
+
+  }
+  
+  .column p {
+    margin: 0.25em 0;
+    font-family: 'Montserrat', sans-serif;
+
+  }
+  
+
+
+  .company-reviews {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .reviews-list .review {
+    background-color: #f0f0f0;
+    margin-bottom: 15px;
+    padding: 10px;
+  }
+  
+  .review-text {
+    font-style: italic;
+  }
+  
+  .review-author {
+    text-align: right;
+    font-weight: bold;
+  }
+  
+  .review-form textarea, .review-form input {
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+  }
+  
+  .review-form button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .review-form button:hover {
+    background-color: #0056b3;
+  }
+  
+
+  /* Review Section Styles */
+
+  
+  .App h2 {
+    color: #59475f;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 2rem;
+    align-items: center;
+  }
+  
+ 
+  .r {
+    margin-top: 1000px; /* Removes default margin from h2 for accurate centering */
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center, if needed */
+    height: 100px; /* Adjust the height as needed */
+    width: 100%; /* Take full width of its container */
+  }
+  
+
+
+  .App form {
+    width: 100%;
+    padding: 2rem;
+    background-color: #d5cbb7;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+
+  }
+  
+  
+
+  
+  .App form button[type="submit"] {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #59475f;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    transition: background-color 0.3s ease;
+    align-items: center;
+    justify-content: center;
+
+  }
+  
+  .App form button[type="submit"]:hover {
+    background-color: #423048;
+    align-items: center;
+    justify-content: center;
+  }
+  
+
+  .App2  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 150px;
+    padding: 2rem 1rem;
+    background-color: var(--champagne);
+  }
+
+  .App2 form textarea {
+    height: 150px; /* Adjust the height of the textarea */
+    resize: vertical; /* Allows the user to adjust the height of the textarea */
+  }
+
+  .App2 form textarea,
+.App2 form input[type="text"] {
+  width: 100%; /* This makes the input and textarea take up the full width of the form */
+  padding: 0.8rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+.reviews-display {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adjust the space between each review card */
+    margin-bottom: 2rem; /* Space before the "Submit Your Review" section */
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+  }
+  
+  .review-card {
+    width: 30%; /* Adjust based on preference */
+    padding: 1rem;
+    background-color: #f0f0f0; /* Light grey background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    font-family: 'Montserrat', sans-serif;
+        font-style: italic;
+  }

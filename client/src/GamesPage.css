@@ -1,0 +1,45 @@
+.games-container {
+  padding: 20px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif; /* Set the font family for the whole container */
+  color: #484150;
+}
+
+.games-grid {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.game-item {
+  cursor: pointer;
+  transition: transform 0.2s;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9f9; /* Light grey background */
+  border: 1px solid #eaeaea; /* Light grey border */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.game-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.game-image {
+  width: 300px; /* Adjust as needed */
+  height: 300px; /* Adjust to maintain a square shape */
+  object-fit: cover; /* This will ensure the image covers the square area without distorting the aspect ratio */
+  border-radius: 8px; /* Rounded corners for the image */
+}
+
+.game-item p {
+  margin-top: 10px;
+  color: #333; /* Dark grey text */
+  font-size: 18px; /* Adjust the font size as needed */
+}

@@ -1,0 +1,80 @@
+.UploadPage {
+  background-color: #f4ecdc; /* The light background color */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Montserrat';
+}
+
+.UploadPage h1 {
+  color: var(--purple); /* This should be the dark color used for your titles */
+  margin-bottom: 2rem;
+}
+
+.UploadPage form {
+  background: #d5cbb7; /* White background for the form */
+  padding: 2rem;
+  border-radius: 10px; /* Rounded corners for the form */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  width: 34%; /* Adjust width as needed */
+  max-width: 600px; /* Maximum width */
+}
+
+.UploadPage label {
+  display: block; /* Make the label take the full width */
+  margin-bottom: .5rem;
+  color: #4a3a50; /* Dark grey color */
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.UploadPage input[type="text"],
+.UploadPage textarea {
+  width: calc(100% - 1rem); /* Adjust width to account for padding */
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc; /* Light grey border */
+  border-radius: 5px; /* Slightly rounded corners for inputs */
+}
+
+.UploadPage input[type="file"] {
+  margin-bottom: 1rem;
+}
+
+.UploadPage button {
+  background-color: var(--purple); /* The button background color */
+  color: white; /* White text color */
+  padding: 1rem;
+  border: none;
+  border-radius: 5px; /* Slightly rounded corners for button */
+  cursor: pointer;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  font-family: 'Montserrat';
+  font-size: 1rem;
+
+  color: var(--champagne);
+}
+
+/* Additional styles for status messages */
+.statusMessage {
+  text-align: center;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.statusMessage.uploading {
+  color: #d1d1d1; /* Light grey for uploading message */
+}
+
+.statusMessage.success {
+  color: #28a745; /* Green for success message */
+}
+
+.statusMessage.failed {
+  color: #dc3545; /* Red for error message */
+}
+
